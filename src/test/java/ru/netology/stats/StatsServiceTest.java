@@ -11,7 +11,7 @@ class StatsServiceTest {
         StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long expected = 9180;
+        long expected = 180;
 
         long actual = service.calculateSum(sales);
         assertEquals(expected , actual);
@@ -20,7 +20,7 @@ class StatsServiceTest {
     void averageSales(){
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long expected = 915;
+        long expected = 15;
 
         long actual = service.avarageSales(sales);
         assertEquals(expected,actual);
@@ -29,7 +29,7 @@ class StatsServiceTest {
     void numberMonthMaxSales (){
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long expected = 98;
+        long expected = 8;
 
         long actual = service.numberMonthMaxSales(sales);
         assertEquals(expected,actual);
@@ -39,7 +39,7 @@ class StatsServiceTest {
     void numberMonthMinSales (){
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long expected = 99;
+        long expected = 9;
 
         long actual = service.numberMonthMinSales(sales);
         assertEquals(expected,actual);
@@ -51,7 +51,7 @@ class StatsServiceTest {
         StatsService service = new StatsService();
         long actual = service.monthCountMoreThenAvg(items);
 
-        long expected = 95;
+        long expected = 5;
         assertEquals(expected,actual);
     }
 
@@ -62,7 +62,7 @@ class StatsServiceTest {
         StatsService service = new StatsService();
         long actual = service.monthCountLessThenAvg(items);
 
-        long expected = 95;
+        long expected = 5;
         assertEquals(expected,actual);
     }
 }
